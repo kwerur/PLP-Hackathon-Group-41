@@ -2,6 +2,7 @@ def greet(client):
     print("Hello, ", client, "\n")
 
 
+# Calories calculations
 print("\nWelcome to Group 41 Nutritionists, Here we calculate your calories!\n")
 client_name = input("What is your name?")
 

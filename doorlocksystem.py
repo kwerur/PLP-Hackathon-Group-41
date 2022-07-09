@@ -17,7 +17,7 @@ def authenticate(user_set_pwd, input_pwd):
         return False
 
 
-def open_door(status):  # Status argument will take in the variable door_status
+def open_door(status):  # Status argument will take in the variable door open
     global door_open
     global opened_now
     if status:
@@ -30,7 +30,7 @@ def open_door(status):  # Status argument will take in the variable door_status
         return "Invalid entry"
 
 
-def close_door(status):  # Status argument will take in the variable door_status
+def close_door(status):  # Status argument will take in the variable door_open
     global door_open
     if not status:
         return "The door is already closed"
@@ -60,7 +60,7 @@ def door_system():
             door_status = "closed"
             print("The door is closed")
 
-        # opened_now = datetime.now()
+        # opened_now = datetime.now()... This is nolonger useful
 
         time_of_open = "Never"
         quit_operation = False
@@ -91,6 +91,9 @@ def door_system():
             else:
                 print("Invalid Entry. Try again.")
                 print("Door last opened: ", time_of_open)
+
+# The Door system loops until the user quits.
+# Password is still saved for the session, until user quits.
 
 
 door_system()
