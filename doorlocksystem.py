@@ -82,6 +82,8 @@ def door_system():
                 quit_operation = True
                 logged_in = False
             elif command.lower() == "logout":
+                print("Logout successful. You can login with the same password. Unfortunately, there is no way to "
+                      "reset it for now :(")
                 quit_operation = True
                 logged_in = False
                 door_system()
