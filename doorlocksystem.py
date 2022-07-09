@@ -18,6 +18,7 @@ def authenticate(user_set_pwd, input_pwd):
 
 
 def open_door(status):  # Status argument will take in the variable door open
+    """This function controls the behaviour when user commands the door to open"""
     global door_open
     global opened_now
     if status:
@@ -31,6 +32,7 @@ def open_door(status):  # Status argument will take in the variable door open
 
 
 def close_door(status):  # Status argument will take in the variable door_open
+    """This function controls behaviour when user commands the door to close"""
     global door_open
     if not status:
         return "The door is already closed"
@@ -42,6 +44,7 @@ def close_door(status):  # Status argument will take in the variable door_open
 
 
 def door_system():
+    """This is the 'main' function that is only executed when the user is logged in"""
     global logged_in
     global door_open
     authenticated = authenticate(user_set_password, input("Enter your password: "))
