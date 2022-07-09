@@ -80,6 +80,7 @@ def door_system():
                 print("Door last opened: ", time_of_open)
                 print("Good Bye!")
                 quit_operation = True
+                logged_in = False
             elif command.lower() == "logout":
                 quit_operation = True
                 logged_in = False
