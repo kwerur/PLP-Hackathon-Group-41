@@ -63,7 +63,7 @@ def door_system():
             door_status = "closed"
             print("The door is closed")
 
-        # opened_now = datetime.now()... This is nolonger useful
+        # opened_now = datetime.now()... This is no-longer useful
 
         time_of_open = "Never"
         quit_operation = False
