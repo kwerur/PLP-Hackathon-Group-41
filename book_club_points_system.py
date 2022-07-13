@@ -20,7 +20,7 @@ elif books_purchased == 3:
 elif books_purchased == 4:
     points = 60
 elif books_purchased > 4:
-    print("Eish! Are you sure... Okay, anyway the maximum awards per person per month is 60 points :)")
+    print("Eish! Are you sure? Okay, anyway the maximum awards per person per month is 60 points :)")
     points = 60
 else:
     print("Invalid entry")
